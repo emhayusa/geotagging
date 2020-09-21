@@ -11,8 +11,9 @@ class Photo_model extends CI_Model {
     
 	function get_all()
     {
-		$this->db->select("nama_file,latitude,longitude,waktu,status");
+		$this->db->select("nama_file,latitude,longitude,waktu");
 		$this->db->from($this->table);
+		$this->db->where('status',1);
 		$this->db->order_by("id_photo", "asc");
 		return $this->db->get();
 	}
