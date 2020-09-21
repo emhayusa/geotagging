@@ -71,8 +71,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Welcome to Geotagging API!</h1>
 
 	<div id="body">
-		<p>api/unggah : POST a Geotagging Data.</p>
-		<p>api/view : GET List of Geotagging Data.</p>
+		<p><a href="app-geotagging.apk">unduh apk mobile geotagging</a></p>
+		<p><a href="peta">lihat peta</a></p>
+	</div>
+	<br />
+	<hr />
+	<br />
+	<div id="body">
+		<p><a href="api/unggah">api/unggah</a> : POST a Geotagging Data.</p>
+		<p><a href="api/view">api/view</a> : GET List of Geotagging Data.</p>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
